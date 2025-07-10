@@ -1,0 +1,87 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+    <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props"
+            Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')"/>
+    <PropertyGroup>
+        <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+        <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+        <ProjectGuid>{A8E54750-ECB3-4CF6-855D-6308B52C0279}</ProjectGuid>
+        <OutputType>Library</OutputType>
+        <AppDesignerFolder>Properties</AppDesignerFolder>
+        <RootNamespace>HMITagAnalyzer</RootNamespace>
+        <AssemblyName>HMITagAnalyzer.Core</AssemblyName>
+        <TargetFrameworkVersion>v4.6.2</TargetFrameworkVersion>
+        <FileAlignment>512</FileAlignment>
+        <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+        <LangVersion>latest</LangVersion>
+    </PropertyGroup>
+    <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x64' ">
+      <DebugType>pdbonly</DebugType>
+      <Optimize>true</Optimize>
+      <DefineConstants>TRACE</DefineConstants>
+      <ErrorReport>prompt</ErrorReport>
+      <WarningLevel>4</WarningLevel>
+      <OutputPath>bin\x64\Release\</OutputPath>
+        <PlatformTarget>x64</PlatformTarget>
+    </PropertyGroup>
+    <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x64' ">
+        <DebugSymbols>true</DebugSymbols>
+        <DebugType>full</DebugType>
+        <Optimize>false</Optimize>
+        <DefineConstants>DEBUG;TRACE</DefineConstants>
+        <ErrorReport>prompt</ErrorReport>
+        <WarningLevel>4</WarningLevel>
+      <OutputPath>bin\x64\Debug\</OutputPath>
+        <PlatformTarget>x64</PlatformTarget>
+    </PropertyGroup>
+    <ItemGroup>
+        <Reference Include="log4net">
+          <HintPath>..\..\..\..\..\Program Files\SEL\AcSELerator\DiagramBuilder\bin\log4net.dll</HintPath>
+        </Reference>
+        <Reference Include="mscorlib"/>
+        <Reference Include="SEL.API">
+            <HintPath>..\..\..\..\..\Program Files\SEL\AcSELerator\DiagramBuilder\bin\api\SEL.API.dll</HintPath>
+        </Reference>
+        <Reference Include="SEL.Logging">
+            <HintPath>..\..\..\..\..\Program Files\SEL\AcSELerator\DiagramBuilder\bin\SEL.Logging.dll</HintPath>
+        </Reference>
+        <Reference Include="SEL.SubstitutionSerializer">
+            <HintPath>..\..\..\..\..\Program Files\SEL\AcSELerator\DiagramBuilder\bin\SEL.SubstitutionSerializer.dll</HintPath>
+        </Reference>
+        <Reference Include="SEL.Wpf.Controls">
+            <HintPath>..\..\..\..\..\Program Files\SEL\AcSELerator\DiagramBuilder\bin\SEL.Wpf.Controls.dll</HintPath>
+        </Reference>
+        <Reference Include="System"/>
+        <Reference Include="System.Core"/>
+        <Reference Include="System.Net"/>
+        <Reference Include="System.Security.AccessControl, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+            <HintPath>..\packages\System.Security.AccessControl.6.0.0\lib\net461\System.Security.AccessControl.dll</HintPath>
+        </Reference>
+        <Reference Include="System.Security.Permissions, Version=9.0.0.0, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
+            <HintPath>..\packages\System.Security.Permissions.9.0.0\lib\net462\System.Security.Permissions.dll</HintPath>
+        </Reference>
+        <Reference Include="System.Security.Principal.Windows, Version=5.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+            <HintPath>..\packages\System.Security.Principal.Windows.5.0.0\lib\net461\System.Security.Principal.Windows.dll</HintPath>
+        </Reference>
+        <Reference Include="System.ValueTuple">
+            <HintPath>..\..\..\..\..\Program Files\SEL\AcSELerator\DiagramBuilder\bin\System.ValueTuple.dll</HintPath>
+        </Reference>
+        <Reference Include="WindowsBase"/>
+    </ItemGroup>
+    <ItemGroup>
+        <Compile Include="HMIProjectInfo.cs"/>
+        <Compile Include="Properties\AssemblyInfo.cs"/>
+    </ItemGroup>
+    <ItemGroup>
+        <None Include="packages.config"/>
+    </ItemGroup>
+    <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets"/>
+    <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+         Other similar extension points exist, see Microsoft.Common.targets.
+    <Target Name="BeforeBuild">
+    </Target>
+    <Target Name="AfterBuild">
+    </Target>
+    -->
+
+</Project>

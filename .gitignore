@@ -1,0 +1,16 @@
+# Ignore build outputs
+**/bin/
+**/obj/
+
+
+# JetBrains iml files
+.idea/
+*.iml
+# Package dependencies (NuGet)
+*.nupkg
+project.lock.json
+*.nuget/
+packages/
+.nuget/
+
+*.DotSettings.user
