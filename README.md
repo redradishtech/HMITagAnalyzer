@@ -112,6 +112,15 @@ your source spreadsheet, but not in **Used Tags**, then something is missing or 
 
 <img src="doc/img/usedtags.png" width="400px">
 
+# Installation
+
+You will need:
+
+ - [.NET Framework 4.6.2](https://dotnet.microsoft.com/en-us/download/dotnet-framework/net462).
+ - [SEL Diagram Builder](https://selinc.com/products/5035/) - installed for the dll, `c:\Program Files\SEL\AcSELerator\DiagramBuilder\bin\api\SEL.API.dll`
+ - [HMITagAnalyzer.exe](releases/download/v1.0.0/HMITagAnalyzer.exe)
+
+
 # Shortcomings
 
 - Currently the app is cumulative, i.e. if you load `a.hprb` and then `b.hprb`, you will see tags for both files, and
