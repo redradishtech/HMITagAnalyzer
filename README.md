@@ -116,9 +116,9 @@ your source spreadsheet, but not in **Used Tags**, then something is missing or 
 
 You will need:
 
+ - [HMITagAnalyzer.exe from the Releases page](https://github.com/redradishtech/HMITagAnalyzer/releases)
  - [.NET Framework 4.6.2](https://dotnet.microsoft.com/en-us/download/dotnet-framework/net462).
  - [SEL Diagram Builder](https://selinc.com/products/5035/) - installed for the dll, `c:\Program Files\SEL\AcSELerator\DiagramBuilder\bin\api\SEL.API.dll`
- - [HMITagAnalyzer.exe](releases/download/v1.0.0/HMITagAnalyzer.exe)
 
 
 # Shortcomings
